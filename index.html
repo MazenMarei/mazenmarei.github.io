@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="icon" href="./images/logo.png"  type="image/x-icon" />
+    <!-- imported css file at header -->
+    <link rel="stylesheet" href="./style.css">
+
+  <!-- imported javacript components at header to load it before page load -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="./components.js"></script>
+</head>
+<body>
+    
+
+    <!-- nav bar header custom Element components made by mazen 🥰 -->
+    <header-box></header-box>
+
+
+
+    <!-- scroll up button  -->
+    <div class="scrollUp">
+        Scroll
+    </div>
+
+<section class="mainpage">
+        <div class="main-page">
+              <!-- main page and description -->
+
+            <div class="title">
+                <h1>Quasar</h1>
+                <p>Biggest Game Library in middle east.</p>
+             </div>
+        </div>
+
+    <div class="test">
+<!-- games auto slide show elments  -->
+        <div class="main-slider-container">
+            <div class="container">
+                <div class="slider">
+                    <img src="./images/download_1.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="./images/download_2.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="./images/download_3.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="./images/download_4.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="./images/download_5.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="./images/download_6.jpeg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="./images/download_7.jpg" alt="">
+                </div>
+                <div class="slider">
+                    <img src="./images/download_8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</section>
+<section>
+    <style>
+       .gotogenrapage{
+            display: flex;
+            position : absolute;
+            background-color: rgba(0, 0, 0, 0.322);
+            width: 100%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: inherit;
+            transform: translateY(200px);
+            opacity: 0;
+            transition: all 1s ease;
+       }
+       .gameBoxfilter {
+        overflow: hidden;
+        position: relative;
+
+       }
+         .gameBoxfilter:hover .gotogenrapage{
+                transform: translateY(0);
+                transition: all 1s ease;
+                opacity: 1;
+         }
+       .gotogenrapage a {
+            color: wheat;
+            text-decoration: none;
+            background-color: #263238;
+            padding: 5px 10px;
+            border-radius: 5px;
+       }
+       .contact-us {
+        background-color: #0C0B2D;
+
+        color: white;
+        width: 98%;
+        margin: 10px auto;
+        height: 50vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 0 0 50px 15px rgba(255, 255, 255, 0.2);
+       }
+         .contact-us-title {
+            margin-top: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        .contact-us-title h1 {
+            margin-bottom: 0px;
+        }
+            .contact-us-form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            .contact-us-form input , .contact-us-form textarea {
+                padding: 10px;
+                margin: 10px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                width: 100%;
+                background: rgba(255, 255, 255, 0.2);
+                border: none;
+                outline: none;
+                color: white;
+                font-size: 18px;
+            }
+            .contact-us-form textarea {
+                height: 100px;
+            }
+            .contact-us-form button {
+                padding: 10px 20px;
+                margin: 10px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                background-color: #263238;
+                color: white;
+                font-size: 18px;
+                cursor: pointer;
+                transform: scale(1);
+                transition: all 0.5s ease;
+            }
+            .contact-us-form button:hover {
+                background-color: #192125;
+                transform: scale(1.1);
+                transition: all 0.5s ease;
+            }
+
+
+    </style>
+    <div class="genres_fillter_cont">
+        <div class="genresfiltersection">
+            <div class="gerneslection gerne-slected">Action</div>
+            <div class="gerneslection">Adventure</div>
+            <div class="gerneslection">Horror</div>
+            <div class="gerneslection">Sport</div>
+            <div class="gerneslection">Esport</div>
+            <div class="gerneslection">Pazzel</div>
+            <div class="gerneslection">Simulation</div>
+        </div>
+        <div class="gamesBoxes">
+            <div class="gameBoxfilter Action-game">Game1
+               <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Action-game">Game2
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Action-game">Game3
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Action-game">Game4
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Action-game">Game5
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Adventure-game">Game6
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Adventure-game">Game7
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Adventure-game">Game8
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Adventure-game">Game9
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Adventure-game">Game10
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Horror-game">Game11
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Horror-game">Game12
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Horror-game">Game13
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Horror-game">Game14
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Sport-game">Game15
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Esport-game">Game16
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Esport-game">Game17
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Pazzel-game">Game18
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+            <div class="gameBoxfilter Simulation-game">Game19
+                <div class="gotogenrapage">
+                     <a href="./gamepage.html">Go to Genra</a>
+               </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="contact-us" id="contact">
+    <div class="contact-us-title">
+        <h1>Contact Us</h1>
+    </div>
+    <form action="" class="contact-us-form">
+        <input type="text" placeholder="Name" required autocomplete="additional-name">
+        <input type="email" placeholder="Email" required autocomplete="">
+        <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <button>Send</button>
+    </form>
+</div>
+<!-- page footer custom Element components made by mazen 🥰 -->
+<footer-box></footer-box>
+
+</body>
+  <!-- main javascript file  -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="./animatescroll.js-master/animatescroll.js"></script>
+<script src="./index.js"></script>
+</html>
