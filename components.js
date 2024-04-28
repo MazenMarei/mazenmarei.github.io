@@ -252,7 +252,6 @@ header {
         window.addEventListener('click', (e) => {
             if (!e.target.matches('header-box')) {
                 if (genresDropdown.style.display =='none') return;
-                $(genresDropdown).slideToggle()
 
             }  
         });
