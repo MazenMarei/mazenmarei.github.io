@@ -223,7 +223,7 @@ header {
                         <a href="#">Simulation</a>
                     </div>
                     </div>
-                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="./index.html#contact">Contact Us</a></li>
                 </ul>
             </div>
             <div class="login">
@@ -399,8 +399,8 @@ svg{
             <ul>
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./about-us.html">About</a></li>
-                <li><a href="#genres_fillter_cont">Services</a></li>
-                <li><a href="#contact-us">Contact</a></li>
+                <li><a href="./index.html#genres_fillter_cont">Services</a></li>
+                <li><a href="./index.html#contact">Contact</a></li>
             </ul>
         </div>
        <div class="mycopy">
