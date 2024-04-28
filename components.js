@@ -397,10 +397,10 @@ svg{
         <div class="footerLinks">
             <div class="underline"><h3>Links</h3></div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-us.html">About</a></li>
+                <li><a href="#genres_fillter_cont">Services</a></li>
+                <li><a href="#contact-us">Contact</a></li>
             </ul>
         </div>
        <div class="mycopy">
