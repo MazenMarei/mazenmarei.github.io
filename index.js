@@ -22,9 +22,7 @@ if(document.querySelector(".our-gernes")) {
 }   
 
 if($(".scrollUp")) {
-  console.log("scrollUp");
   $(".scrollUp").click(function(e) {
-    console.log("clicked");
       $('section').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});
       
   });
@@ -57,7 +55,6 @@ if($("#signup-form")) {
         $(".wrongdata").fadeOut()
       }, 10000);
     } else {
-      console.log(dataBase);
       window.location.href = "login.html";
     }
   })
@@ -101,7 +98,6 @@ if($(".genres_fillter_cont")) {
   genreGames.forEach(game => {game.classList.add("active-game")})
 
   $(".gerneslection").click(function(e) {
-    console.log(e.target);
     slectedGenre.classList.remove("gerne-slected");
     slectedGenre = e.target;
     slectedGenre.classList.add("gerne-slected");

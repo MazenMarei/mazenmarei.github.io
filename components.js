@@ -145,7 +145,7 @@ header {
     margin: auto;
     border-radius: 4px;
     box-shadow: 0 14px 35px 0 rgba(9,9,12,0.4);
-    z-index: 2;
+    z-index: 1;
     display: none;
     box-shadow: 0px 0px 50px 5px rgba(255, 255, 255, 0.1);
 }
@@ -161,7 +161,7 @@ header {
     border-bottom: 8px solid #111;
     content: '';
     display: block;
-    z-index: 2;
+    z-index: 1;
     transition: all 200ms linear;
 }
 
@@ -245,14 +245,13 @@ header {
             if(e.target.matches('.genres')) {
                 $(genresDropdown).slideToggle()
              } else {
-                if (genresDropdown.style.display =='none') return;
-                $(genresDropdown).slideToggle()
+                if ($(genresDropdown).css('display') !='none')   $(genresDropdown).slideToggle()
+
             }
         });
         window.addEventListener('click', (e) => {
             if (!e.target.matches('header-box')) {
-                if (genresDropdown.style.display =='none') return;
-
+                if ($(genresDropdown).css('display') !='none')  $(genresDropdown).slideToggle()
             }  
         });
 
