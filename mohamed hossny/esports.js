@@ -4,7 +4,7 @@ let style = document.createElement("style")
 style.innerHTML= ` 
 body {
     background-size: 100% 50% !important;
-    height: 200dvh;
+    height: 215dvh;
     background: url('./images/background.png');
     margin: 0;
     padding: 0;

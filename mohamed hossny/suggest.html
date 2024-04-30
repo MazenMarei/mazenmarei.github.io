@@ -42,6 +42,9 @@
         if(name.value === '' || name.value == null){
             e.preventDefault();
             error_name.innerText = "name is required"
+            setTimeout(() => {
+                error_name.innerText = '';
+            }, 3000);
             valid = false;
         }else{
             error_name.innerText="";
@@ -49,6 +52,9 @@
         if(categ.value === '' || categ.value == null){
             e.preventDefault();
             error_cat.innerText = "category is required"
+            setTimeout(() => {
+                error_cat.innerText = '';
+            }, 3000);
             valid = false;
         }else{
             error_cat.innerText="";
@@ -66,6 +72,9 @@
             localStorage.setItem('name', NAME);
             localStorage.setItem('category', CATEGORY);
             messageDiv.innerText = 'suggestion submitted successfully';
+            setTimeout(() => {
+                messageDiv.innerText = '';
+            }, 3000);
 
         }
 </script>
