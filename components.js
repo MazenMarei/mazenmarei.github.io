@@ -243,25 +243,25 @@ header {
                     <li class="genres"><a href="#" onClick= "">Genres &dtrif;</a></li>
                     <div class="genres-dropdown">
                     <div class="gerna-menueoption">
-                        <a href="#">Action</a>
+                        <a href="./mohamed ashraf/action.html">Action</a>
                     </div>
                     <div class="gerna-menueoption">
-                        <a href="#">Adventure</a>
+                        <a href="./mohamed fathy/index 22.html">Adventure</a>
                     </div>
                     <div class="gerna-menueoption">
-                        <a href="#">Horror</a>
+                        <a href="./hassan/it finn.html">Horror</a>
                     </div>
                     <div class="gerna-menueoption">
-                        <a href="#">Sport</a>
+                        <a href="./mohamed ramadan/sport.html">Sport</a>
                     </div>
                     <div class="gerna-menueoption">
-                        <a href="#">Esport</a>
+                        <a href="./mohamed hossny/esports.html">Esport</a>
                     </div>
                     <div class="gerna-menueoption">
-                        <a href="#">Pazzel</a>
+                        <a href="./Haidy/page2.html">Pazzel</a>
                     </div>
                     <div class="gerna-menueoption">
-                        <a href="#">Simulation</a>
+                        <a href="./mohamed yousry/SimMain.html">Simulation</a>
                     </div>
                     </div>
                     <li><a href="./index.html#contact">Contact Us</a></li>
@@ -275,7 +275,7 @@ header {
                 <a href="./signup.html">Sign up</a>
             </div>
         </header>
-        <div class="themebtn" id="themebtn" onclick="">
+        <div class="themebtn" id="themebtn" onclick="changeTheme ()">
         Theme
     </div>
     <div class="scrollUp">
