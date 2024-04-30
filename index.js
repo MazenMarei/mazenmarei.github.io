@@ -181,6 +181,7 @@ function changeTheme () {
       let hostElement = document.querySelector("header-box");
       if(!hostElement) continue;
       let shadowRoot = hostElement.shadowRoot;
+      if(!shadowRoot) continue;
       let element = shadowRoot.querySelectorAll(slector.replace("shadow-header-box", ""));
       if(element) {
         element.forEach(el => {
