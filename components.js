@@ -28,7 +28,7 @@ header {
     position: fixed;
     align-items: center;
     perspective: 1000px;
-    z-index: 1;
+    z-index: 2;
     margin-top: .5%;
     margin-left: 1%;
     box-shadow: 0px 0px 50px 5px rgba(255, 255, 255, 0.1);
