@@ -1,0 +1,481 @@
+@font-face {
+    font-family: Inter;
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
+}
+
+.mainsim {
+    background: url("images/peakpx.png");
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+.titlesim {
+    text-align: center;
+    font-size: 55px;
+    font-weight: 258;
+    font-family: 'Inter';
+    background: linear-gradient(45deg, #ffffff, #ffffff7b);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+.main-flex {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px;
+}
+.frost-flex {
+    display: flex;
+    flex-direction: column;
+}
+.frostrectangle {
+    display: flex;
+    width: 625px;
+    height: 100px;
+    border-radius: 0px 0px 30px 30px;
+    background: linear-gradient(0deg, #562d974f, black);
+    align-items: center;
+    justify-content: center;
+}
+.frostorder {
+    text-align: center;
+    color: white;
+    font-family: 'Inter';
+    font-size: 25px;
+}
+.featured-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-featured {
+    display: flex;
+    flex-direction: row;
+}
+.featuredrectangle {
+    display: flex;
+    width: 625px;
+    height: 100px;
+    border-radius: 0px 0px 30px 30px;
+    background: linear-gradient(0deg, #562d974f, black);
+    align-items: center;
+    justify-content: center;
+}
+.featuredorder {
+    text-align: center;
+    color: white;
+    font-family: 'Inter';
+    font-size: 25px;
+}
+.frostpunk {
+    width: 625px;
+    height: 475px;
+    border-radius: 30px 30px 0px 0px;
+    max-width: 100%;
+    max-height: 100%;
+    transition: .2s;
+}
+.frostpunk:hover, .f-feedback-submit:hover{
+    transform: scale(1.05);
+}
+.stellaris {
+    width: 625px;
+    height: 250px;
+    border-radius: 30px 30px 0px 0px;
+    max-width: 100%;
+    max-height: 100%;
+    transition: .2s;
+}
+.stellaris:hover {
+    transform: scale(1.05);
+}
+.rimworld {
+    width: 312.5px;
+    height: 225px;
+    max-width: 100%;
+    max-height: 100%;
+    transition: .2s;
+}
+.rimworld:hover {
+    transform: scale(1.05);
+}
+.skylines {
+    width: 312.5px;
+    height: 225px;
+    max-width: 100%;
+    max-height: 100%;
+    transition: .2s;
+}
+.skylines:hover {
+    transform: scale(1.05);
+}
+
+/* Second half of the page */
+.sub-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px;
+    padding-bottom: 0px;
+}
+.main-flex2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.othergames {
+    display: flex;
+    width: 1250px;
+    height: 130px;
+    border-radius: 0px 0px 30px 30px;
+    background: linear-gradient(0deg, #562d974f, black);
+    justify-content: center;
+}
+.gamepromotion {
+    text-align: center;
+    color: white;
+    font-family: 'Inter';
+    font-size: 40px;
+}
+.othergamesimages {
+    width: 312.5px;
+    height: 225px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 30px 30px 0px 0px;
+    transition: .2s;
+}
+.othergamesimages:hover {
+    transform: scale(1.05);
+}
+.frostanchor {
+    height: 475px;
+}
+.stellarisanchor {
+    height: 250px;
+}
+.featuredanchor {
+    height: 225px;
+}
+.otheranchored {
+    height: 225px;
+}
+/* Game specific pages */
+
+.frostpunk-page {
+    background-image: url(images/SzppA33\ 1.png);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+}
+.frost-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    border: none;
+}
+#frost-search {
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    width: 60%;
+    box-sizing: border-box;
+    border: none;
+    background-color: rgba(6, 6, 6, 0.385);
+    color: white;
+}
+#frost-search::placeholder {
+    color: white;
+}
+.simgame {
+    font-size: 24px;
+    font-family: 'Inter';
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    animation: frostFade 0.5s ease-in-out;
+    text-decoration: none;
+    color: white;
+}
+@keyframes frostFade {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0)
+    }
+}
+#simlist {
+    margin-top: 60px;
+    background-color: #2c3c49;
+    width: 49%;
+    border-radius: 10px;
+    position: absolute;
+    display: none;
+    list-style: none;
+    padding: 0;
+}
+.game-contents {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+}
+.contentrectangle {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 420px;
+    background: #00010391;
+    stroke: black;
+    align-items: center;
+    justify-content: space-between;
+}
+.gameheader {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    border-radius: 30px;
+}
+.briefdescription {
+    color: white;
+    font-size: 18px;
+    font-family: 'Inter';
+    text-align: center;
+}
+.game-purchase {
+    display: flex;
+    gap: 80px;
+    flex-direction: row;
+    background: linear-gradient(90deg,#576573,#2c3c49);
+    width: 1000px;
+    height: 75px;
+    place-items: center;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.purchase-game {
+    font-family: 'Inter';
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+.price-n-purchase {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.game-price {
+    display: flex;
+    font-family: 'Inter';
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    width: 80px;
+    height: 55px;
+}
+.purchase-button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Inter';
+    cursor: pointer;
+}
+.screenshotscontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px;
+}
+.screenshots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.screenshots img {
+    width: 100%;
+    height: auto;
+    transition: 0.2s;
+}
+.screenshots img:hover {
+    scale: 1.05;
+}
+.descriptionrectangle {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 2200px;
+    background: linear-gradient(0deg, #64687060, rgba(0, 0, 0, 0.758));
+    stroke: black;
+    align-items: center;
+    justify-content: center;
+}
+.contentlist {
+    color: white;
+    font-family: 'Inter';
+}
+.extra-description {
+    color: white;
+    font-family: 'Inter';
+    justify-content: center;
+    padding: 20px;
+}
+.description-title {
+    color: #1b92d1;
+}
+.frost-table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+.frost-table th, .frost-table td {
+    padding: 10px;
+    text-align: center;
+}
+.frost-table th {
+    background-color: #06040456;
+}
+.sub-f-table {
+    width: 100%;
+    border: none;
+}
+.sub-f-table td {
+    border: none;
+    padding: 5px;
+    background-color: #8e8f9041;
+    text-align: center;
+    transition: 0.2s;
+}
+.sub-f-table td:hover {
+    scale: 1.05;
+    background-color: #ffffff5b;
+}
+.frost-table, th, td {
+    border:1px solid black;
+    background: rgba(144, 143, 143, 0.169); 
+    font-family: 'Inter';
+  }
+.frostpunk-form {
+    background: rgba(51, 47, 47, 0.622);
+    width: 85%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    border: solid;
+    border-color: rgb(255, 255, 255);
+}
+.simulation-form {
+    background: rgba(6, 6, 6, 0.374);
+    width: 85%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    color: white;
+    font-size: 32px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 10px;
+    border: solid;
+    border-color: rgb(36, 13, 63);
+}
+.f-e-mail {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 4px;
+    background-color: #06060648;
+    color: white;
+    border: none;
+}
+.f-e-mail::placeholder {
+    color: rgba(255, 255, 255, 0.635);
+}
+.f-feedback {
+    width: 100%;
+    height: 150px;
+    padding: 12px 20px;
+    border-radius: 4px;
+    background-color: #06060648;
+    font-size: 16px;
+    border: none;
+    color: white;
+}
+.f-feedback::placeholder {
+    color: rgba(255, 255, 255, 0.635);
+}
+.f-feedback-submit {
+    background-color: #04a167;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 12px 32px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+.frost-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.frost-popup-message {
+    background-color: rgb(211, 209, 209);
+    color: black;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    margin: 20% auto;
+    width: 60%;
+    max-width: 400px;
+}
+.frost-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+#fErrEmail, #fErrFeedback {
+    color: red;
+    font-size: 24px;
+    margin-top: 5px;
+}

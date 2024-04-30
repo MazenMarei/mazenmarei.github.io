@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name ="description" content="sports"/>
+    <meta name ="view part" content="width=device-widt,initial-scale=1.0"/>
+    <title>sports</title>
+    <link rel= "stylesheet"href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type= "text/javascript" src="../components.js"></script>
+    <!-- <script src="./sport.js"></script> -->
+    
+</head>
+<body>
+
+<header-box></header-box>
+<!-- <div><img src="./images/messi.jpg" width="900px" height="500px" class="messi1"id="messi1" ></div> -->
+
+
+<script>
+    function myFunction() {
+      // Declare variables
+      var input, filter, ul, li, a, i, txtValue;
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      ul = document.getElementById("myUL");
+      li = ul.getElementsByTagName('li');
+      if(!filter || filter.length<1 || filter==''){
+        for(i = 0; i < li.length; i++){
+            li[i].style.display='none'
+        }
+        return;
+      }
+      // Loop through all list items, and hide those who don't match the search query
+      for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[i].style.display = "block";
+        } else {
+          li[i].style.display = "none";
+        }
+      }
+    }
+    </script>
+  <div class="search-bar">
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names..">
+
+<ul id="myUL">
+  <li><a href="./Ffifa24.html">FiFa24</a></li>
+  <li><a href="./pes22.html">PES2022</a></li>
+ 
+  <li><a href="./maddin.html">MADDEN24</a></li>
+  <li><a href="./rugby4.html">RUGBY4</a></li>
+
+  <li><a href="./NBA2K24.html">NBA2K24</a></li>
+  <li><a href="./OOOTP.html">OOTP25</a></li>
+  <li><a href="./spike.html">SPIKE</a></li>
+  <li><a href="./fifa23.html">FiFa23</a></li>
+  <li><a href="./pes21.html">PES2021</a></li>
+  <li><a href="./pes.html">PES2020</a></li>
+  <li><a href="./NBA2K23.html">NBA2K23</a></li>
+  <li> <a href="./super mega.html">SuperMega4</a></li>
+  <li><a href="./rugby22.html">RUGBY22</a> </li>
+  <li><a href="./cricket19.html">Cricket19</a></li>
+  <li> <a href="./cricket24.html">Cricket24</a></li>
+</ul>
+  </div>
+<section class="container1" style="height: 100vh;">
+    <div class="slider-wrapper">
+        <div class="ramadan">
+        <img src="./images/messi.jpg"id="slide-1" alt="" >
+        <img src="./images/Spike.jpeg" id="slide-2" alt="">
+        <img src="./images/MADDEN24.jpg " id="slide-3" alt="">
+        <img src="./images/NBA2K24.jpeg"id="slide-4" alt="">
+        <img src="./images/0_23.jpg"id="slide-6" alt="">
+        <img src="./images/maxresdefault.jpg"id="slide-5" alt="">
+        </div>
+    
+
+        <div class="slider-nav">
+            <a href="#slide-1"id="image1"></a>
+            <a href="#slide-2"id="image2"></a>
+            <a href="#slide-3"id="image3"></a>
+            <a href="#slide-4"id="image4"></a>
+            <a href="#slide-6"id="image6"></a>
+            <a href="#slide-5"id="image5"></a>
+        </div>
+    </div>
+</section>
+<section class="main-section">
+<section class="first">
+    <div class="games ">
+        <a href="./Ffifa24.html" id="game1"><img src="./images/fifa24.jpg" width="300px" height="150px"></a>
+        <a href="./fifa23.html" id="game2"><img src="./images/fifa23.jpg"width="300px" height="150px"></a>
+        <a href="./pes22.html" id="game3"><img src="./images/pes2022.jpg"width="300px" height="150px"></a>
+        <a href="" id="game4"><img src="./images/pess21.jpg"width="300px" height="150px"></a>
+        <a href="./pes.html" id="game5"><img src="./images/pes2020-hp-messi-ronaldinho-02.jpg"width="300px" height="150px"></a>
+    </div>
+<div class="text">
+    <a href="./Ffifa24.html"><h2>FiFa24</h2></a>
+    <a href="./fifa23.html"><h2>FiFa23</h2></a>
+    <a href="./pes22.html"><h2>PES2022</h2></a>
+    <a href=""><h2>PES2021</h2></a>
+    <a href="./pes.html"><h2>PES2020</h2></a>
+</div>
+</section>
+
+<section class="page">
+    <div class="playing">
+        <a href="" id="game10"><img src="./images/Rugby League Live 4.jpg"width="300px" height="150px"></a>
+        <a href="" id="game6"><img src="./images/MADDEN24.jpg" width="300px" height="150px"></a>
+        <a href="" id="game7"><img src="./images/super mega 4.jpeg"width="300px" height="150px"></a>
+        <a href="" id="game8"><img src="./images/NBA2K24.jpeg"width="300px" height="150px"></a>
+        <a href="" id="game13"><img src="./images/NBA2K23.jpg"width="300px" height="150px"></a>
+
+    </div>
+<div class="writing">
+    <a href=""><h2>RUGBY4</h2></a>
+    <a href=""><h2>MADDEN24</h2></a>
+    <a href=""><h2>SuperMega4</h2></a>
+    <a href="" ><h2>NBA2K24</h2></a>
+    <a href=""><h2>NBA2K23</h2></a>
+</div>
+</section>
+<section class="page2">
+<div class="playing2 ">
+    <a href="" id="game11"><img src="./images/cricket19.jpg"width="300px" height="150px"></a>
+    <a href="" id="game12"><img src="./images/CRICKET24.jpg"width="300px" height="150px"></a>
+    <a href="" id="game9"><img src="./images/Spike.jpeg"width="300px" height="150px"></a>
+    <a href="" id="game16"><img src="./images/OOTP25.jpg"width="300px" height="150px"></a>
+    <a href="" id="game19"><img src="./images/RUGBY22.jpg"width="300px" height="150px"></a>
+</div>
+<div class="writing2">
+    <a href=""><h2>Cricket19</h2></a>
+    <a href=""><h2>Cricket24</h2></a>
+    <a href=""><h2>SPIKE</h2></a>
+    <a href=""><h2>OOTP25</h2></a>
+    <a href=""><h2>RUGBY22</h2></a> 
+</div>
+<div class="form">
+  <form action="" > 
+    <h2 style="padding-top: 10px;" id="feed">Feedback</h2>
+    <label for="name" class="kamal">Name:</label>
+    <input type="text" id="name" placeholder="Enter your name..." > <br> <br> <br>
+    <div id="error_name" class="named"></div>
+    <label for="opinion">Opinion:</label>
+    <input type="text" id="opinion" placeholder="Enter your opinion..."> <br> <br>
+    <div id="error_opinion" ></div>
+
+    <input type="submit" id="submit">
+  </form>
+</div>
+</section>
+</section>
+      <!-- page footer custom Element components made by mazen 🥰 -->
+      <footer-box></footer-box>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+<script src="./sport.js"></script>
+</html>

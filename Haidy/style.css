@@ -1,0 +1,104 @@
+ 
+body{
+    background-image: url(thinkingimages/icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: white;
+    margin:20px;
+}
+
+
+#two{
+    float: left;
+    top: 100px; 
+    width: 40%;
+
+}
+#bshot2{
+    float:left;
+    top:60px;
+    width: 50%;
+}
+#stray{
+    margin-top: 50px;
+    float :right;
+    width: 40%;    
+}
+#braid{
+    float:left;
+    top:650px; 
+    width: 40%;
+    margin: 17pt;
+}
+#talos{
+    float: left;
+    top:755px; 
+    width: 40%;
+    margin: 17pt;
+    
+}
+#shadow{
+    margin-top: 50px;
+    float :right;
+    width: 45%;
+}
+.pagination{
+    text-align : center;
+    
+}
+.pagination a {
+    color: #000;
+    text-decoration: none;
+    padding: 9px 9px;
+}
+.pagination a.active{
+    background-color: rgb(250, 250, 250);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: rgb(213, 85, 141);
+    border-radius: 5px;
+
+}
+
+.search {
+    position: fixed;
+    top: 0;
+    left: 0; /* Adjust left position if needed */
+    width: 100%; /* Set width to fill the entire width of the viewport */
+    background-color: midnightblue;
+    overflow: hidden; /* Clear floats */
+}
+
+.search a {
+    float: left;
+    margin: 0 5px;
+    padding: 14px 16px;
+    text-decoration: none; 
+    color: white; /* Set text color */
+    border: 3px solid #e91348; 
+    font-size: large;
+    border-radius:10px;
+}
+
+.search a.active {
+    background-color: #e91348; /* Set active link background color */
+    border-radius:10px;
+}
+
+.search a.pp {
+    float: right;
+    border-radius:10px;
+}
+
+.search input[type="text"] {
+    float: right;
+    padding: 6px;
+    border-radius:10px;
+    border: 3px solid #e91348;
+    margin: 6px; 
+    font-size: 17px;
+}

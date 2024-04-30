@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Frostpunk 2</title>
+        <!-- importing css file at header -->
+        <link rel="stylesheet" href="SimStyle.css">
+        <!-- imported javacript components at header to load it before page load -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type= "text/javascript" src="../components.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body class="frostpunk-page">
+        <!--The nav bar made by mazen-->
+        <header-box></header-box>
+        <div class="frost-search">
+            <input id="frost-search" onkeyup="search_simulation()" onkeydown="search_simulation2()" type="text" placeholder="Search for a game...">
+            <ul id="simlist">
+                <li><a class="simgame" href="FrostPunk.html">Frostpunk 2</a></li>
+                <li><a class="simgame" href="FrostPunk.html">Stellaris</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Rimworld</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Cities Skylines 2</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Sims 4</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Planet Zoo</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Hearts of Iron IV</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Euro Truck Simulator 2</a></li>
+            </ul>
+        </div>
+        <script src="./SimJS.js"></script>
+        <div>
+            <strong>
+                <h1 class="titlesim">Frostpunk 2</h1>
+            </strong>
+        </div>
+        <!-- Flex container for the main contents -->
+        <div class="game-contents">
+            <!-- <iframe class="frostpunk-trailer" width="960" height="500" src="https://www.youtube.com/watch?v=9kfHUN4gFiw" frameborder="0"></iframe> -->
+            <iframe class="frostpunk-trailer" width="600" height="420" src="https://www.youtube.com/embed/9kfHUN4gFiw?si=t3M7xhkWQQAt9UWZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <div class="contentrectangle">
+                <img class="gameheader" src="./images/frostpunk/frostheader.jpg" alt="">
+                <p class="briefdescription">Discover a city-survival game set 30 years after an apocalyptic blizzard ravaged Earth, transforming our world into a harsh, icy wasteland. In Frostpunk 2, you must face a new deadly threat that appears on the horizon – human nature and its unsatiated thirst for power.</p>
+            </div>
+        </div>
+        <!-- A game purchase bar with an icon -->
+        <div class="game-purchase">
+            <p class="purchase-game">Pre-Purchase Frostpunk 2</p>
+            <!-- A div containing the price of the game and its purchase button -->
+            <div class="price-n-purchase">
+                <div class="game-price">$20.99</div>
+                <button type="button" class="purchase-button"><i class="fa-solid fa-cart-shopping"></i> Purchase now!</button>
+            </div>
+        </div>
+        <!-- Image grid for inside a container for game screenshots -->
+        <div class="screenshotscontainer">
+            <div class="screenshots">
+                <img src="./images/frostpunk/ss_64f92be6940d4b81247c87a71184fe32a7669763.jpg" alt="">
+                <img src="./images/frostpunk/ss_123c8d4a709dcaae5958d6db6e36c15c9051e47e.jpg" alt="">
+                <img src="./images/frostpunk/ss_adb57edd1df9d389ede90f0ba0d689102f67a5aa.jpg" alt="">
+                <img src="./images/frostpunk/ss_fb3d3305d44e467255b64f3c81b4e1bf79caa91f.jpg" alt="">
+            </div>
+            <!-- The main description for the game -->
+            <div class="descriptionrectangle">
+                <img src="../images/frostpunk/Must Not Fall.png" alt="">
+                <div class="game-video">
+                    <video src="./images/frostpunk/movie480_vp9.webm" controls></video>
+                </div>
+                <ul class="contentlist">
+                    <li>Revisit the Frostland 30 years after the Great Storm and face a new deadly threat to your City’s future – human nature</li>
+                    <li>Build your City on a new scale by creating entire districts with different purposes: industrial, scientific, etc.</li>
+                    <li>Ensure that all parts of the City work in unison with each other like cogs of a giant, resource-hungry machine</li>
+                    <li>Erect The Council building where you’ll forge laws of the growing metropolis</li>
+                    <li>Navigate between different factions and their ideas for the future, try to tame their ambitions as well as unrestrained thirst for power</li>
+                    <li>Research technologies that will change the face of your City</li>
+                </ul>
+                <div class="extra-description">
+                    <p><h3 class="description-title">THE FROST NEVER ENDS</h3> <br> The game takes place 30 years after the apocalyptic blizzard that has taken place in Frostpunk. Earth is still overwhelmed by the neverending frost and harsh, icy climate. You play as the leader of a resource-hungry metropolis where expansion and internal conflicts are an unavoidable reality. It’s up to you to make decisions about your City’s future and face their consequences. <br> <br> In Frostpunk 2 you can build your City on a new scale by creating entire districts with different purposes. Make sure that all parts of the City work well together as well as research technologies that will set the direction for your citizens’ progress.</p> <br>
+                    <p><h3 class="description-title">THE CITY MUST NOT FALL</h3> <br> “Frostpunk 2 is still a game about the City and its society,” states Jakub Stokalski, game Co-Director and Design Director at 11 bit studios. <br> <br> “But inner turmoils, sparked by rising social differences, mean that players will be facing new kinds of threats. We use a post-apocalyptic setup to tell a meaningful story about human ambition. Because ultimately, what can end us is not nature itself – it’s human nature.”</p> <br>
+                    <p><h3 class="description-title">NAVIGATE BETWEEN FACTIONS AS A STEWARD</h3> <br> As the City grows, creating and passing new laws becomes a more complex matter. The people slowly divide into factions with different, often contradictory visions of the future. <br> <br> The Council is a place where these ideas clash, sometimes violently. It’s your role as a Steward to ensure that the city will not fall because of those conflicts. Manage emerging crises while at the same time steering humanity towards a new destiny.</p> <br>
+                </div>
+                <img src="./images/frostpunk/face.gif" alt="">
+                <!-- The table containing the system requirements -->
+                <p class="titlesim">Game Editions</p>
+                <table class="frost-table">
+                    <thead>
+                        <tr>
+                            <th>Edition</th>
+                            <th>Price</th>
+                            <th>Contents</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Standard Edition</td>
+                            <td>$20.99</td>
+                            <td>
+                                <table class="sub-f-table">
+                                    <tr>
+                                        <td>Main Game</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Digital Artbook</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Deluxe Edition</td>
+                            <td>$38.99</td>
+                            <td>
+                                <table class="sub-f-table">
+                                    <tr>
+                                        <td>Main Game</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 DLCs</td>
+                                    </tr>
+                                    <tr>
+                                        <td>72H Early Access</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Digital artbook & Soundtrack</td>
+                                    </tr>
+                                    <tr>
+                                        <td>"Warm Flesh" Novella</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+    <!-- The feedback form -->
+    <div class="frostpunk-form">
+        <p>If you got any feedback or complaints; please fill in your Email address and a description of your issue and/or suggestion.</p>
+        <div id="fErrEmail"></div>
+        <div id="fErrFeedback"></div>
+        <form onsubmit="frostStorage(event)">
+            <label for="f-e-mail">E-mail:</label><br>
+            <input type="text" class="f-e-mail" id="f-e-mail" placeholder="E-mail"><br>
+            <span id="fErrEmail"></span><br>
+            <label for="f-feedback">Feedback:</label><br>
+            <textarea id="f-feedback" class="f-feedback" cols="30" rows="10" placeholder="Your appreciated feedback."></textarea><br>
+            <span id="fErrFeedback"></span><br>
+            <input type="submit" class="f-feedback-submit" value="Submit">
+        </form>
+            <div class="frost-popup" id="frostPopup">
+                <div class="frost-popup-message">
+                    <span class="frost-close" id="frostClose">&times;</span>
+                    <p>Thank you, your feedback has been submitted.</p>
+                </div>
+            </div>
+    </div>
+
+          <!-- page footer custom Element components made by mazen 🥰 -->
+<footer-box></footer-box>
+</html>

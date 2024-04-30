@@ -6,7 +6,18 @@ class headerBox extends HTMLElement {
         shadow.innerHTML =
             `
         <style>
-        
+        .newTheme {
+            border-image: linear-gradient(90deg, #263238, #263238) 1 !important;
+            color: wheat !important;
+            background-image: linear-gradient(90deg, #263238, #263238) 1 !important;
+            -webkit-text-fill-color: wheat !important;
+            text-shadow: 0 0 3px black;
+            }
+            .newThemediv {
+                background-color: #aad3d3 !important;
+                box-shadow: 0px 0px 50px 5px rgb(0 0 0 / 70%);
+
+            }
 header {
     width: 98%;
     background-color: #0C0B2D;
@@ -23,21 +34,52 @@ header {
     box-shadow: 0px 0px 50px 5px rgba(255, 255, 255, 0.1);
 
 }
+
+/* scroll up */
+.scrollUp{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+.scrollUp:hover , .themebtn:hover{
+    transform: scale(1.1);
+    background-color: rgba(245, 245, 220, 0.573);
+}
+.themebtn {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    width: 40px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1;
+    transition: all 0.5s ease; 
+}
 .logo {
-    width: 5%;
-    align-content: center;
-
+    width: 6%;
+    position: relative;
+    height: 100%;
+    margin-top: 1%;
+    background-image: url('./images/logo.png');
+    background-size: 80px 60px;
+    background-repeat: no-repeat;
 }
-.logo img {
-    margin: 0;
-    padding: 0;
-    height: 60px;
 
-}
 .logoname {
     align-content: center;
     top : -7px;
-    left: -25px;
+    left: -10px;
     position: relative;
     font-size: 60px;
     font : bold;
@@ -187,10 +229,9 @@ header {
 }
 
         </style>
-  
-        <header>
+        
+        <header id="header-box">
             <div class="logo">
-                <img src="./images/logo.png">
             </div>
             <div class="logoname">
                 <a href="./index.html">uasar</a>
@@ -199,7 +240,7 @@ header {
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./about-us.html">About Us</a></li>
-                    <li class="genres">Genres &dtrif;</li>
+                    <li class="genres"><a href="#" onClick= "">Genres &dtrif;</a></li>
                     <div class="genres-dropdown">
                     <div class="gerna-menueoption">
                         <a href="#">Action</a>
@@ -234,15 +275,20 @@ header {
                 <a href="./signup.html">Sign up</a>
             </div>
         </header>
-
+        <div class="themebtn" id="themebtn" onclick="">
+        Theme
+    </div>
+    <div class="scrollUp">
+        Scroll
+    </div>
         `;
 
         let header = this.shadowRoot.querySelector('header');
         let genresDropdown = this.shadowRoot.querySelector('.genres-dropdown');
-
+        let scroll = this.shadowRoot.querySelector('.scrollUp');
         header.addEventListener('click', (e) => {
            
-            if(e.target.matches('.genres')) {
+            if(e.target.matches('.genres a')) {
                 $(genresDropdown).slideToggle()
              } else {
                 if ($(genresDropdown).css('display') !='none')   $(genresDropdown).slideToggle()
@@ -254,6 +300,13 @@ header {
                 if ($(genresDropdown).css('display') !='none')  $(genresDropdown).slideToggle()
             }  
         });
+
+        if($(scroll)) {
+            $(scroll).click(function(e) {
+                $('section').animatescroll({scrollSpeed:1000,easing:'easeOutBounce'});
+                
+            });
+          }
 
         // window.addEventListener('scroll', () => {
         //     if (genresDropdown.style.display =='none') return;
@@ -271,7 +324,18 @@ class footerBox extends HTMLElement {
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
             <style>
-            
+            .newTheme {
+                border-image: linear-gradient(90deg, #263238, #263238) 1 !important;
+                color: wheat !important;
+                background-image: linear-gradient(90deg, #263238, #263238) 1 !important;
+                -webkit-text-fill-color: wheat !important;
+                text-shadow: 0 0 3px black;
+    
+                }
+                .newThemediv {
+                    background-color: #aad3d3 !important;
+                
+                }
 footer {
     width: 98%;
     height: 25vh;
@@ -384,7 +448,7 @@ svg{
 
             </style>
 
-            <footer>
+            <footer id="footer-box">
     <div class="footerSeaction">
         <div class="copyRight">
             <img src="./images/logo.png" alt="" srcset="">

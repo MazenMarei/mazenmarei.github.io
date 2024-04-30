@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simulation</title>
+        <!-- importing css file at header -->
+        <link rel="stylesheet" href="SimStyle.css">
+        <!-- imported javacript components at header to load it before page load -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script type= "text/javascript" src="../components.js"></script>
+</head>
+<body class="mainsim">
+        <!--The nav bar made by mazen-->
+<header-box></header-box>
+        <div class="frost-search">
+        <input id="frost-search" onkeyup="search_simulation()" onkeydown="search_simulation2()" type="text" name="frost-search" placeholder="Search for a game...">
+        <ul id="simlist">
+                <li><a class="simgame" href="FrostPunk.html">Frostpunk 2</a></li>
+                <li><a class="simgame" href="FrostPunk.html">Stellaris</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Rimworld</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Cities Skylines 2</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Sims 4</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Planet Zoo</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Hearts of Iron IV</a></li></li>
+                <li><a class="simgame" href="FrostPunk.html">Euro Truck Simulator 2</a></li>
+        </ul>
+        </div>
+    <script src="./SimJS.js"></script> 
+        <div>
+                <strong>
+                        <h1 class="titlesim">Simulation</h1>
+                </strong>
+        </div>
+        <!--making a flex container with all the elements of the main page-->
+        <div class="main-flex">
+                <!-- nested flex for frostpunk -->
+                <div class="frost-flex">
+                        <a href="./FrostPunk.html" class="frostanchor">
+                                <img src="images/Hammer_trailer_FP2_thumbnail_1920x1080.jpg" alt=""  class="frostpunk">
+                        </a>
+                                <div class="frostrectangle">
+                                        <p class="frostorder">Pre-Order Now</p>
+                                </div>
+                        </div>
+                <!-- nested flex for featured -->
+                        <div class="featured-flex">
+                                <a href="./FrostPunk.html" class="stellarisanchor">
+                                        <img src="images/9044743-stellaris-linux-front-cover.jpg" alt="" class="stellaris">
+                                </a>
+                                <!-- sub nested flex for the lower row of featured -->
+                                <div class="sub-featured">
+                                        <a href="./FrostPunk.html" class="featuredanchor">
+                                                <img src="images/EGS_RimWorld_LudeonStudios_S1-2560x1440-410a62ec21d44260409182e1174cce2e.jpg" alt="" class="rimworld">
+                                        </a>
+                                        <a href="./FrostPunk.html" class="featuredanchor">
+                                                <img src="images/cities-skylines-ii-pc-game-steam-cover.jpg" alt="" class="skylines">    
+                                        </a>
+                                </div>
+                                <div class="featuredrectangle">
+                                        <p class="featuredorder">New & Featured</p>
+                                </div>
+                        </div>
+        </div>
+        <!-- another set of divs for the set of remaining games at the bottom of the page -->
+        <div class="main-flex2">
+                <div class="sub-flex">
+                        <a href="./FrostPunk.html" class="otheranchored">
+                                <img src="images/ts4-featured-image-base-refresh.png.adapt.crop16x9.575p.png" alt="" class="othergamesimages">
+                        </a>
+                        <a href="./FrostPunk.html" class="otheranchored">
+                                <img src="images/og_image.jpg" alt="" class="othergamesimages">
+                        </a>
+                        <a href="./FrostPunk.html" class="otheranchored">
+                                <img src="images/t620x300-62e94797bbdfb58353eeb7b8348096a8.webp" alt="" class="othergamesimages">
+                        </a>
+                        <a href="./FrostPunk.html" class="otheranchored">
+                                <img src="images/EuroTruckBanner.jpg" alt="" class="othergamesimages">
+                        </a>
+                </div>
+                <div class="othergames">
+                        <p class="gamepromotion">Check out our other games as well</p>
+                </div>
+        </div>
+        <div class="simulation-form">
+                <p>If you got any feedback or complaints; please fill in your Email address and a description of your issue and/or suggestion.</p>
+                <div id="fErrEmail"></div>
+                <div id="fErrFeedback"></div>
+                <form onsubmit="frostStorage(event)">
+                    <label for="f-e-mail">E-mail:</label><br>
+                    <input type="text" class="f-e-mail" id="f-e-mail" placeholder="E-mail"><br>
+                    <span id="fErrEmail"></span><br>
+                    <label for="f-feedback">Feedback:</label><br>
+                    <textarea id="f-feedback" class="f-feedback" cols="30" rows="10" placeholder="Your appreciated feedback."></textarea><br>
+                    <span id="fErrFeedback"></span><br>
+                    <input type="submit" class="f-feedback-submit" value="Submit">
+                </form>
+                    <div class="frost-popup" id="frostPopup">
+                        <div class="frost-popup-message">
+                            <span class="frost-close" id="frostClose">&times;</span>
+                            <p>Thank you, your feedback has been submitted.</p>
+                        </div>
+                    </div>
+            </div>
+            <!-- page footer custom Element components made by mazen 🥰 -->
+<footer-box></footer-box>
+</body>
+</html>

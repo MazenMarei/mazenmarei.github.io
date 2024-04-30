@@ -1,0 +1,2 @@
+let sliderCopy = document.getElementsByClassName("container")[0].cloneNode(true);
+document.getElementsByClassName("slider-container")[0].innerHTML = sliderCopy.innerHTML + sliderCopy.innerHTML + sliderCopy.innerHTML;

@@ -1,0 +1,156 @@
+<!-- hossny -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>esports category</title>
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type= "text/javascript" src="../components.js"></script>
+    <link rel="icon" type="image/png" href="./images/logo.png">
+    <link rel="stylesheet" href="esports.css">
+</head>
+<body id="esports">  
+    <header-box></header-box>
+    <h1>E-SPORTS games</h1> 
+    
+<div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Search</button>
+    <div id="myDropdown" class="dropdown-content">
+        <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+        <a href="./league.html" target="_blank">league of legends</a>
+        <a href="./valortant.html" target="_blank">valorant</a>
+        <a href="./r6s.html" target="_blank">rainbow siege</a>
+        <a href="./league.html" target="_blank">Pubg</a>
+        <a href="./valortant.html" target="_blank">Dota 2</a>
+        <a href="./r6s.html" target="_blank">Apex</a>
+        <a href="./league.html" target="_blank">overwatch</a>
+        <a href="./valortant.html" target="_blank">csgo</a>
+        <a href="./r6s.html" target="_blank">Fortnite</a>
+    </div>
+</div>
+<script>function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+function filterFunction() {
+    var input, filter, ul, li, a, i;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    div = document.getElementById("myDropdown");
+    a = div.getElementsByTagName("a");
+    for (i = 0; i < a.length; i++) {
+        txtValue = a[i].textContent || a[i].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        a[i].style.display = "";
+        } else {
+        a[i].style.display = "none";
+    }
+}
+}</script>
+
+
+    <!-- slidebar-->
+<section class="small-page" id="p1">
+    <div class="container">
+        
+        <div class="slide">
+            <div class="item" style="background-image: url(./images/lol.jpeg);">
+                <div class="content">
+                    <div class="name">league of legends</div>
+                    <div class="des">a team-based strategy game where two teams of five powerful champions face off to destroy the other's base.</div>
+                    <a href="./league.html" target="_blank" ><button>see more</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/valorant.webp);">
+                <div class="content">
+                    <div class="name">valorant</div>
+                    <div class="des">an online multiplayer computer game, produced by Riot Games. It is a first-person shooter game</div>
+                    <a href="./valortant.html" target="_blank"><button>see more</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/overwatch.jpg);">
+                <div class="content">
+                    <div class="name">overwatch</div>
+                    <div class="des">a multimedia franchise centered on a series of online multiplayer first-person shooter (FPS) video games developed by Blizzard Entertainment.</div>
+                    <a href="./league.html" target="_blank" ><button>see more</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/r6s-1920.webp);">
+                <div class="content">
+                    <div class="name">rainbow siege</div>
+                    <div class="des">an elite, realistic, tactical, team-based shooter where superior planning and execution triumph</div>
+                    <a href="./r6s.html" target="_blank"><button>see more</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/fortnite.jpg);">
+                <div class="content">
+                    <div class="name">fortnite</div>
+                    <div class="des"> a third-person shooter game where up to 100 players compete to be the last person or team standing</div>
+                    <a href="./valortant.html" target="_blank"><button>see more</button></a>
+                </div>
+            </div>
+            <div class="item" style="background-image: url(./images/pubg.jpg);">
+                <div class="content">
+                    <div class="name">pubg</div>
+                    <div class="des">a player versus player shooter game in which up to one hundred players fight in a battle royale</div>
+                    <a href="./valortant.html" target="_blank"><button>see more</button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+</section></div>
+
+                            <!-- sec page -->
+<Section class="small-page" id="p2">
+    <div class="bg-color">
+    <div class="cont">
+        <div class="cards reveal">
+            <div class="game-icon">
+                <a href=".league.html" target="_blank"><img src="./images/lollogo.jpg" alt=""></a>        
+            </div>
+            <div class="game-icon">
+                <a href=".valortant.html" target="_blank"><img src="./images/fortnite.jpg" alt=""></a>
+            </div>
+            <div class="game-icon">
+                <a href=".league.html" target="_blank"><img src="./images/overwatch.jpg" alt=""></a>
+            </div>
+            <div class="game-icon">
+                <a href="./r6s.html" target="_blank"><img src="./images/pubg.jpg" alt=""></a>
+            </div>
+            <div class="game-icon">
+                <a href="./r6s.html" target="_blank"><img src="./images/r6s2.jpg" alt=""></a>
+            </div>
+            <div class="game-icon">
+                <a href="./valortant.html" target="_blank"><img src="./images/valorant2.jpg" alt=""></a>
+            </div>
+            <div class="game-icon">
+                <img src="./images/rocket.jpg" alt="">
+            </div>
+            <div class="game-icon">
+                <img src="./images/apex.jpeg" alt="">
+            </div>
+            <div class="game-icon">
+                <img src="./images/csgo.png" alt="">
+            </div>
+            <div class="game-icon">
+                <img src="./images/dota.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</Section>
+
+      <!-- page footer custom Element components made by mazen 🥰 -->
+      <footer-box></footer-box>
+<script src="esports.js"></script>
+</body>
+</html>
