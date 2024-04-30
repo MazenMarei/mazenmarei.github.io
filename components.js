@@ -246,7 +246,7 @@ header {
                         <a href="./mohamed ashraf/action.html">Action</a>
                     </div>
                     <div class="gerna-menueoption">
-                        <a href="./mohamed fathy/lol.html">Adventure</a>
+                        <a href="./mohamed fathy/lols.html">Adventure</a>
                     </div>
                     <div class="gerna-menueoption">
                         <a href="./hassan/it finn.html">Horror</a>
